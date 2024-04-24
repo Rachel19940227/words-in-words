@@ -3,15 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Word Input</title>
+<title>main</title>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <label for="wordInput">Enter a word:</label>
-        <input type="text" id="wordInput">
         <div id="letterContainer"></div>
+        <label for="userInput">User's input:</label>
+        <input type="text" id="userInput" readonly> <!-- Add the user's input box (readonly) -->
+        <button onclick="deleteLetter()">Delete</button> <!-- Add the delete button -->
+        <button onclick="checkWord()">Submit</button> <!-- Add the submit button -->
     </div>
-    <script src="script.js"></script>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
+
