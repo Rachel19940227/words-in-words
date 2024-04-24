@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px;
+}
+
+#letterContainer {
+    margin-top: 10px;
+}
+
+.letter {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+    cursor: pointer;
+}
