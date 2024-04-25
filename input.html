@@ -8,9 +8,17 @@
 </head>
 <body>
     <div class="container">
+        <h1>Words in words</h1>
+        <p>create new words using only the letters from the initial word</p>
         <label for="wordInput">Enter a word:</label>
         <input type="text" id="wordInput">
-        <button id="submitButton" onclick="goToPageTwo()">Submit</button> <!-- Add the submit button -->
+        <button id="submitButton" onclick="goToMain()">Submit</button> <!-- Add the submit button -->
+        <h2>Or you can choose from words above:</h2>
+        <div>
+            <button onclick="chooseWord('weatherman')">weatherman</button>
+            <button onclick="chooseWord('Soldier')">Soldier</button>
+            <button onclick="chooseWord('Mermaid')">Mermaid</button>
+        </div>
     </div>
     <script src="input.js"></script>
 </body>

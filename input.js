@@ -1,4 +1,4 @@
-function goToPageTwo() {
+function goToMain() {
     const wordInput = document.getElementById("wordInput").value;
     if (wordInput.trim() === "") {
         alert("Please enter a word.");
@@ -6,4 +6,9 @@ function goToPageTwo() {
         sessionStorage.setItem("userInputWord", wordInput);
         window.location.href = "main.html";
     }
+}
+
+function chooseWord(word) {
+    sessionStorage.setItem("userInputWord", word);
+    window.location.href = "main.html";
 }

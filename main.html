@@ -8,13 +8,17 @@
 </head>
 <body>
     <div class="container">
+        <div id="userInputDisplay"></div> <!-- Add the user input display line -->
         <div id="letterContainer"></div>
         <label for="userInput">User's input:</label>
         <input type="text" id="userInput" readonly> <!-- Add the user's input box (readonly) -->
         <button onclick="deleteLetter()">Delete</button> <!-- Add the delete button -->
         <button onclick="checkWord()">Submit</button> <!-- Add the submit button -->
+        <p><a href="answers.html">YOU CAN SEE ANSWERS HERE</a></p> <!-- Add the link to page 3 -->
+        <div id="wordCount">Word Count: 0</div> <!-- Add the word count box -->
+        <div id="wordDisplay"></div> <!-- Add the word display box -->
     </div>
-    </div>
+
     <script src="main.js"></script>
 </body>
 </html>

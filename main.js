@@ -1,6 +1,12 @@
+let wordCounter = 0;
+let lastWord = null;
+
 document.addEventListener("DOMContentLoaded", function() {
     const userInputWord = sessionStorage.getItem("userInputWord");
     if (userInputWord) {
+        const userInputDisplay = document.getElementById("userInputDisplay");
+        userInputDisplay.textContent = "Your letters: " + userInputWord; // Display user input from page 1
+
         const letterContainer = document.getElementById("letterContainer");
         const userInput = document.getElementById("userInput");
 
@@ -32,19 +38,37 @@ function deleteLetter() {
 function checkWord() {
     const userInput = document.getElementById("userInput").value;
 
-    // Perform validation or database check here
-    // For demonstration purposes, show an alert with the validation message
     if (userInput.trim() === "") {
         alert("Please enter a word.");
+    } else if (userInput === lastWord) {
+        alert("This word already exists. Please try again.");
+        document.getElementById("userInput").value = ""; // Set user's input to null
     } else {
         // Simulate checking with a database (replace with actual database logic)
         const dictionary = ["apple", "banana", "cherry"]; // Example dictionary
 
         if (dictionary.includes(userInput.toLowerCase())) {
             alert("Word exists in the dictionary.");
+            displayWord(userInput); // Display the word if it exists
+            lastWord = userInput; // Update lastWord
         } else {
             alert("No such word in the dictionary. Please try again.");
             document.getElementById("userInput").value = ""; // Set user's input to null
         }
     }
+}
+
+function displayWord(word) {
+    const wordDisplay = document.getElementById("wordDisplay");
+    const wordCount = document.getElementById("wordCount");
+
+    // Create a new text box to display the word
+    const wordBox = document.createElement("input");
+    wordBox.type = "text";
+    wordBox.value = word;
+    wordBox.readOnly = true;
+    wordDisplay.appendChild(wordBox);
+
+    wordCounter++; // Increment word counter
+    wordCount.textContent = "Word Count: " + wordCounter;
 }
