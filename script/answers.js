@@ -21,6 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } else {
         alert("User input not found.");
-        window.location.href = "index.html"; // Redirect to the first page if user input is not found
+        window.location.href = "../html/index.html"; // Redirect to the first page if user input is not found
     }
 });

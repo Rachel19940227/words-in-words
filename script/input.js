@@ -4,11 +4,11 @@ function goToMain() {
         alert("Please enter a word.");
     } else {
         sessionStorage.setItem("userInputWord", wordInput);
-        window.location.href = "main.html";
+        window.location.href = "../server/main.php";
     }
 }
 
 function chooseWord(word) {
     sessionStorage.setItem("userInputWord", word);
-    window.location.href = "main.html";
+    window.location.href = "../server/main.php";
 }

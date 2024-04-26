@@ -72,3 +72,56 @@ function displayWord(word) {
     wordCounter++; // Increment word counter
     wordCount.textContent = "Word Count: " + wordCounter;
 }
+
+
+// function checkWord() {
+//     const userInput = document.getElementById("userInput").value;
+
+//     if (userInput.trim() === "") {
+//         alert("Please enter a word.");
+//     } else if (userInput === lastWord) {
+//         alert("This word already exists. Please try again.");
+//         document.getElementById("userInput").value = ""; // Set user's input to null
+//     } else {
+//         if (search_result === true) {
+//             alert("Word exists in the dictionary.");
+//             displayWord(userInput); // Display the word if it exists
+//             lastWord = userInput; // Update lastWord
+//         } else {
+//             alert("No such word in the dictionary. Please try again.");
+//             document.getElementById("userInput").value = ""; // Set user's input to null
+//         }
+//     }
+// }
+
+// function checkWord() {
+//     const userInput = document.getElementById("userInput").value.trim();
+
+//     if (userInput === "") {
+//         alert("Please enter a word.");
+//     } else {
+//         const xhr = new XMLHttpRequest();
+//         xhr.open("POST", "../server/main.php", true);
+//         xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+//         xhr.onreadystatechange = function() {
+//             if (xhr.readyState === XMLHttpRequest.DONE) {
+//                 if (xhr.status === 200) {
+//                     const response = JSON.parse(xhr.responseText);
+//                     if (response) {
+//                         alert("Word exists in the dictionary.");
+//                         displayWord(userInput);
+//                         lastWord = userInput;
+//                         document.getElementById("userInput").value = "";
+//                     } else {
+//                         alert("No such word in the dictionary. Please try again.");
+//                         document.getElementById("userInput").value = "";
+//                     }
+//                 } else {
+//                     alert("Error: Unable to process request.");
+//                 }
+//             }
+//         };
+//         xhr.send("userInput=" + userInput);
+//     }
+// }
+
