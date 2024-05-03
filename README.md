@@ -1,6 +1,14 @@
-### Application Description
+## Application Description
 
 This game allows users to find new words by using letters from existing words. When a user inputs a word, the page automatically splits the word into individual letters. Users can then interactively click on the letters displayed on the screen or directly input them into the designated input box.
+Challenge your creativity and word skills with this entertaining brainstorm game, where you can create new words and expand your vocabulary in a fun and interactive way.
+## Features:
+🔧 Fully Customizable
+💪 Dependencies with Bootstrap
+🌎 Tested in All Modern Browsers
+😎 Images & FontIcons
+⌨️ Mobile Optimization & Normal Usage
+🔎 Funny brainstorm game
 ![index](image/index.png)
 ### Word Matching
 
