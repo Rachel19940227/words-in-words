@@ -5,12 +5,12 @@ This game allows users to find new words by using letters from existing words. W
 Challenge your creativity and word skills with this entertaining brainstorm game, where you can create new words and expand your vocabulary in a fun and interactive way.
 
 ## Features:
-🔧 Fully Customizable
-💪 Dependencies with Bootstrap
-🌎 Tested in All Modern Browsers
-😎 Images & FontIcons
-⌨️ Mobile Optimization & Normal Usage
-🔎 Funny brainstorm game
+-🔧 Fully Customizable
+-💪 Dependencies with Bootstrap
+-🌎 Tested in All Modern Browsers
+-😎 Images & FontIcons
+-⌨️ Mobile Optimization & Normal Usage
+-🔎 Funny brainstorm game
 ![index](image/index.png)
 ### Word Matching
 
