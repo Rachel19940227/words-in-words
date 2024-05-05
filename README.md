@@ -16,7 +16,8 @@ Challenge your creativity and word skills with this entertaining brainstorm game
 
 The entered word is matched against a dictionary stored in the database. The dictionary consists of the top 10,000 English words and includes information such as parts of speech and explanations for each word.
 ![main](image/main.png)
-
+### Find Answers
+![main](image/answer.png)
 ### Technologies Used
 - Frontend: HTML, CSS, JavaScript
 - Backend: Java, MySQL
