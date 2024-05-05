@@ -24,5 +24,5 @@ The "find answers" function is a feature designed to search for and retrieve rel
 ### Technologies Used
 - Frontend: HTML, CSS, JavaScript
 - Backend: Java, MySQL
-- Frameworks: Bootstrap (for styling), SpringBoot, Mybatis, (for server)
+- Frameworks: Bootstrap (for styling), SpringBoot, Mybatis (for server)
 
