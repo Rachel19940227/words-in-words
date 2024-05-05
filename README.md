@@ -19,6 +19,6 @@ The entered word is matched against a dictionary stored in the database. The dic
 
 ### Technologies Used
 - Frontend: HTML, CSS, JavaScript
-- Backend: Java, SpringBoot, Mybatis, MySQL
-- Frameworks: Bootstrap (for styling), Express (for server)
+- Backend: Java, MySQL
+- Frameworks: Bootstrap (for styling), SpringBoot, Mybatis, (for server)
 
