@@ -18,7 +18,7 @@ The entered word is matched against a dictionary stored in the database. The dic
 ![main](image/main.png)
 
 ### Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: PHP, MySQL
-Frameworks: Bootstrap (for styling), Express (for server)
+- Frontend: HTML, CSS, JavaScript
+- Backend: Java, MySQL
+- Frameworks: Bootstrap (for styling), SpringBoot, Mybatis, (for server)
 
