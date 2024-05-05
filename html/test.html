@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Word Existence</title>
+</head>
+<body>
+    <form id="wordForm">
+        <label for="inputWord">Enter a word:</label>
+        <input type="text" id="inputWord" name="inputWord">
+        <button type="submit" id="submitButton">Check</button>
+    </form>
+    <textarea id="resultTextarea" rows="5" cols="50" readonly></textarea>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#wordForm').submit(function(e) {
+                e.preventDefault();
+                var inputWord = $('#inputWord').val();
+                $.ajax({
+                    url: 'http://localhost:8081/checkWordExists?inputWord=' + inputWord,
+                    type: 'GET',
+                    success: function(response) {
+                        if (response === true) {
+                            $('#resultTextarea').val(inputWord + ' exists in the database.');
+                        } else {
+                            $('#resultTextarea').val(inputWord + ' does not exist in the database.');
+                        }
+                    },
+                    // error: function(xhr, status, error) {
+                    //     console.error(xhr.responseText);
+                    // }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

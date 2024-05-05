@@ -41,3 +41,17 @@ padding: 0;
     padding-top: 60px;
     padding-bottom: 20px;
 }
+
+#existingWordsBox {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Style individual word items */
+#existingWordsBox div {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #000;
+}
