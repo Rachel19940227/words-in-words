@@ -25,4 +25,5 @@ The "find answers" function is a feature designed to search for and retrieve rel
 - Frontend: HTML, CSS, JavaScript
 - Backend: Java, MySQL
 - Frameworks: Bootstrap (for styling), SpringBoot, Mybatis (for server)
+- Data Clean: Python pandas
 
