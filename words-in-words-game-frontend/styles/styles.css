@@ -55,3 +55,14 @@ padding: 0;
     padding: 5px;
     border: 1px solid #000;
 }
+
+.wordBox {
+    border: none; /* Remove the border */
+    border-color: #ccc;
+    padding: 10px; /* Add padding for inner spacing */
+    margin: 10px 0; /* Add margin for spacing between words */
+    height: 35px;
+    background-color: #f8f8f8; /* Optional: Add background color */
+    display: inline-block; /* Make sure each word box takes only the necessary width */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}

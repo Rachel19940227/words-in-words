@@ -1,3 +1,4 @@
+
 let wordCount = 0;
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -48,12 +49,14 @@ $(document).ready(function() {
             success: function(response) {
                 if (response === true) {
                     $('#resultDiv').text(inputWord + ' exists in the dictionary.');
-                    $('#existingWordsBox').append('<div>' + inputWord + '</div>');
+                    $('#existingWordsBox').append('<div class="wordBox">' + inputWord + '</div>');
                     wordCount++;
                     $('#wordCount').text('Word Count: ' + wordCount);
                 } else {
                     $('#resultDiv').text(inputWord + ' does not exist in the dictionary.');
                 }
+                // Clear the input box
+                $('#inputWord').val('');
             },
         });
     });
