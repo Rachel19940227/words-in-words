@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     } else {
         alert("User input not found. Please go back to the first page and input a word.");
-        window.location.href = "index.php";
+        window.location.href = "../index.html";
     }
 });
 
