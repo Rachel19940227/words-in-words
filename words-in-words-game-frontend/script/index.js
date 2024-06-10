@@ -4,13 +4,13 @@ function goToMain() {
         alert("Please enter a word.");
     } else {
         sessionStorage.setItem("userInputWord", wordInput);
-        window.location.href = "../words-in-words-game-frontend/html/main.html";
+        window.location.href = "html/main.html";
     }
 }
 
 function chooseWord(word) {
     sessionStorage.setItem("userInputWord", word);
-    window.location.href = "../words-in-words-game-frontend/html/main.html";
+    window.location.href = "html/main.html";
 }
 
 document.addEventListener("DOMContentLoaded", function() {
